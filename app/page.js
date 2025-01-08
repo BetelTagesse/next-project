@@ -5,21 +5,6 @@ import ImageSlideshow from "@/components/images/image-slideshow";
 export default function Home() {
   return (
     <>
-      <header className={classes.header}>
-        <div className={classes.slideshow}>
-          <ImageSlideshow />
-        </div>
-        <div>
-          <div className={classes.hero}>
-            <h1>NextLevel Food for foodies</h1>
-            <p> taste & share food all over the world.</p>
-          </div>
-          <div className={classes.cta}>
-            <Link href="/community">Join the community</Link>
-            <Link href="/meals">Explore Meals</Link>
-          </div>
-        </div>
-      </header>
       <main>
         <section className={classes.section}>
           <h2>How it works</h2>
