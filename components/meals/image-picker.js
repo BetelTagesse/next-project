@@ -7,6 +7,7 @@ import Image from "next/image";
 export default function ImagePicker({ label, name }) {
   const [pickedImage, setPickedImage] = useState();
   const imageInput = useRef();
+
   function handlePickClick() {
     imageInput.current.click();
   }
@@ -18,8 +19,9 @@ export default function ImagePicker({ label, name }) {
     }
 
     const fileReader = new FileReader();
-    fileReader.onload = () => {};
-    setPickedImage(fileReader.result);
+    fileReader.onload = () => {
+      setPickedImage(fileReader.result);
+    };
     fileReader.readAsDataURL(file);
   }
   return (
