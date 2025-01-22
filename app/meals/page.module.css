@@ -21,9 +21,15 @@
 
 .main {
   width: 90%;
-  max-width: 40rem;
-  margin: 0 auto;
   text-align: center;
+  /* width: 90%; */
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30rem, 1fr));
+  grid-gap: 5rem;
+  margin: 2rem 2rem; /* Center horizontally by setting auto margins */
+  list-style: none;
+  padding: 0;
 }
 
 .main h2 {
